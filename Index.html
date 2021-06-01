@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil's Gym</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Oi&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Geostar&display=swap" rel="stylesheet">
+</head>
+<style>
+    /*CSS Reset*/
+    body {
+        background-image: url('Fitness.jpg');
+        color: white;
+        margin: 10px;
+        padding: 0px;
+        height: 700px;
+        background-repeat: no-repeat;
+        background-size: 1100px;
+        background-color: black;
+    }
+
+    /* Img at a left side of a header */
+    .left {
+        margin: auto 50px;
+        position: absolute;
+
+    }
+
+    /* Text inside a img at the left of the Hearder */
+    .left p {
+        font-size: large;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: red;
+    }
+
+    /* Home And All */
+    .Middle {
+
+        display: block;
+        margin: 20px 90px;
+        position: absolute;
+        top: 15px;
+        right: 550px;
+        word-spacing: 25px;
+        font-size: large;
+
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+
+    .Middle a {
+        text-decoration: none;
+        color: red;
+    }
+
+
+    /* Contact me button at the right side of the nav*/
+    .Right button {
+        color: white;
+        background-color: red;
+        padding: 10px;
+        display: inline-block;
+        position: absolute;
+        right: 70px;
+        top: 25px;
+        border-radius: 25px;
+        font-size: large;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        cursor: pointer;
+    }
+
+
+    .Right button a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .Content h1 {
+        position: absolute;
+        top: 220px;
+        left: 80px;
+        color: red;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 30px;
+    }
+
+    .Content h2 {
+
+        position: absolute;
+        top: 250px;
+        left: 80px;
+        color: red;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 30px;
+    }
+    .row{
+        position: absolute;
+        top: 210px;
+        right: 30px;
+        color: red;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 25px;
+
+    }
+    .row input{
+        width: 300px;
+        margin: 15px;
+        padding: 6px;  
+    }
+    .col-12 input{
+        width: 400px;
+        margin: 20px;
+        padding: 30px;
+        
+    }
+    .row button{
+        color: white;
+        background-color: red;
+        padding: 10px;
+        display: inline-block;
+        position: relative;
+        top: 80px;
+        border-radius: 25px;
+        font-size: large;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        cursor: pointer;
+
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!--Left box for logo-->
+        <div class="left">
+            <img src="Logo.jpg" alt="" height="80px" width="80px">
+            <p>Nikhil's Gym</p>
+        </div>
+
+        <!--Center bor for navigation-->
+        <div class="Middle">
+            <a href="#">Home</a>
+            <a href="AboutUs.html">AboutUs</a>
+            <a href="ContactUS.html">ContactUS</a>
+            <a href="Join.html">JoinUs</a>
+
+        </div>
+
+        <!--Right box for Button-->
+        <div class="Right">
+            <button><a href="ContactUS.html">ContactMe</a></button>
+            <button><a href="ContactUS.html">ContactMe</a></button>
+        </div>
+
+    </header>
+    <div class="Content">
+
+        <h1>Hi This is Nikhil</h1>
+        <h2> YOUR GYM TRAINER</h2>
+
+    </div>
+
+    <!-- This is for the form -->
+    <div class="from">
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Name</label>
+                <input type="text" class="form-control" id="inputPassword4" placeholder="Enter the full name">
+            </div>
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Enter the Email Id">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Enter the Address">
+            </div>
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">StateName</label>
+                <select id="inputState" class="form-select">
+                    <option selected>Select the State</option>
+                    <option>
+                         Maharashtra
+                    </option>
+                    <option>
+                        Andhra Pradesh
+                    </option>
+                    <option>
+                        Assam
+                    </option>
+                    <option>
+                        Uttar pradesh
+                    </option>
+                    <option>
+                        Punjab
+                    </option>
+                </select>
+
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">CityName</label>
+                <input type="text" class="form-control" id="inputCity" placeholder="Enter the Name Of the City">
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip" placeholder="Enter the Zip Code">
+            </div>
+           <div class="col-12">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
